@@ -759,6 +759,10 @@ config SPI_ZYNQMP_GQSPI
 	help
 	  Enables Xilinx GQSPI controller driver for Zynq UltraScale+ MPSoC.
 
+config SPI_FRAM
+	tristate "Adafruit SPI FRAM Driver"
+	depends on SPI_MASTER && HAS_DMA
+
 #
 # Add new SPI master controllers in alphabetical order above this line
 #

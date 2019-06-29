@@ -15,6 +15,12 @@ if RADIO_ADAPTERS && VIDEO_V4L2
 config RADIO_TEA575X
 	tristate
 
+config RADIO_SI4703
+	tristate "Silicon Labs Si4703 FM Radio with RDS Transmitter support"
+	depends on I2C
+
+source "drivers/media/radio/si4703/Kconfig"
+
 config RADIO_SI470X
 	bool "Silicon Labs Si470x FM Radio Receiver support"
 	depends on VIDEO_V4L2

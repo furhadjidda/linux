@@ -1,0 +1,3 @@
+config I2C_SI4703
+	tristate "Silicon Labs Si4703 FM Radio Receiver support with I2C"
+	depends on RADIO_SI4703
